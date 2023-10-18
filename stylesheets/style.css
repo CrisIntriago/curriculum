@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "welcome-bold";
+    src: url('../sao-welcome.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "sao-bold";
+    src: url('../sao-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "sao-regular";
+    src: url('../sao-regular.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #99c8c5;
+    --secundary-color: white;
+    --terniary-color: #9f9eb1;
+}
+
+
+html {
+    font-size: 10px;
+    background: black;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: "sao-regular";
+}
+
+/*Estructura general */
+
+.contenedor {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+/*Perfil*/
+
+.perfil {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+
+.contenedor-perfil {
+    display: flex;
+    gap: 2rem;
+}
+
+.foto-perfil {
+    max-width: 250px;
+}
+
+.nombre-perfil {
+    font-family: "welcome-bold";
+}
+
+
+.nombre {
+    color: var(--primary-color);
+    font-size: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.apellido-materno {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+.carrera {
+    font-size: 2.5rem;
+    font-family: sao-bold;
+    color: var(--secundary-color);
+}
+
+@media only screen and (max-width: 768px){
+    .contenedor-perfil{
+        flex-direction: column;
+    }
+}
+
+
+/* Reutilizables*/
+
+.texto{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color:var(--terniary-color);
+    font-family: "sao-regular";
+    font-weight: 100;
+}
+
+.item-pre-titulo {
+	font-size: 1.6rem;
+	color: var(--terniary-color);
+	font-weight: 300;
+}
+.item-titulo {
+	font-size: 2rem;
+	color: var(--secundary-color);
+	font-weight: 500;
+	margin: 0.8rem 0;
+}
+.item-sub-titulo {
+	font-size: 1.6rem;
+	color: var(--terniary-color);
+	font-weight: 400;
+}
+
+
+.titulo{
+ color: var(--primary-color);
+ font-size: 3rem;
+}
+
+
+/*subpartes */
+
+.lista-tecno{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+    column-count: 2;
+
+}
+
+/* educación */
+
+.educacion{
+    margin-top: 2rem;
+}
+
+.educacion-item {
+	margin-top: 2rem;
+}
+
+/* Experiencia */
+.item-experiencia {
+	margin-top: 2rem;
+}
+
+/* proyectos */
+.proyectos{
+    margin-top: 2rem;
+}
+
+/*Miscaleneos*/
+
+#Matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.mapa {
+    -webkit-filter: sepia(100%) hue-rotate(180deg);
+    filter: sepia(100%) hue-rotate(180deg);
+}
+
+hr {
+	grid-column: 1/-1;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 2px solid var(--terniary-color);
+}

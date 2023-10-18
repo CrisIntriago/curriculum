@@ -1,122 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Currículum Vitae</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cristian Intriago">
+    <meta name="language" content="Español">
+    <meta name="doctype" content="Currículum Vitae">
+    <meta name="description" content="Currículum Vitae de Cristian Intriago: Estudiante de Ing en Computación">
+    <meta name="keywords"
+        content="Currículum Vitae, Cristian Ariel Intriago Moncayo, Habilidades, Experiencia, Industria, Proyectos, Software, Ingeniero, Desarrollador de software">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Resume Cristian Intriago</title>
 </head>
 
 <body>
-  <header>
-    <div class="section" id="section1">
-      <h1>Currículum Vitae</h1>
-      <img src="C:\Users\CltControl\Desktop\curriculum\fotoPersona.jpg" width="250px" height="250px">
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Educación</a></li>
-      <li><a href="#">Experiencia</a></li>
-      <li><a href="#">Habilidades</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-  <section id="informacion-personal">
-    <h2>Información personal</h2>
-    <p>
-      Nombre: <span>Cristian Intriago</span>
-    </p>
-    <p>
-      Correo electrónico: <span>cristiancito@gmail.com</span>
-    </p>
-  </section>
-  </div>
-  <div class="section" id="section2">
-    <section id="educacion">
-      <h2>Educación</h2>
-      <p>
-        Grado: <span>Ingeniería en Ciencias en Computación</span><br>
-      </p>
-      <p>
-        Institución: <span>Escuela Politecnica del Litoral</span><br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JiJWeNqulSU?si=nnwbVCVtbR3IED5d"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <br>
-      </p>
-      <p>
-        Fechas: <span>2020 - 2023</span>
-      </p>
-    </section>
-    <section id="experiencia">
-      <h2>Experiencia</p>
-        <p>
-          Cargo: <span>Desarrollador de software</span>
-        </p>
-        <p>
-          Empresa: <span>Apple</span>
-        </p>
+    <canvas id="Matrix"></canvas>
+    <script src="./script.js"></script>
 
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5478174761915!2d-122.01190044743537!3d37.33488632182158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1ses!2sec!4v1697037580784!5m2!1ses!2sec"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+    <div class="contenedor">
+        <div class="perfil">
+            <div class="contenedor-perfil">
+                <div class="foto-perfil">
+                    <img src="imagenes\foto-perfil-mejorada.png" alt="Cristian Intriago"
+                        style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                </div>
+                <div>
+                    <header>
+                        <h1 class="nombre-perfil">
+                            <span class="nombre">Cristian</span>
+                            <span class="apellido-materno">Intriago Moncayo</span>
+                        </h1>
+                    </header>
+
+                    <span class="carrera">Desarrollador Junior</span>
+                    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo1">
+            <div class="tecnologias">
+                <h3 class="titulo">Tech Stack</h3>
+                <ul class="lista-tecno texto">
+                    <li>NodeJs</li>
+                    <li>ExpressJs</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>SQL</li>
+                    <li>Java Spring</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+
+            <div class="educacion">
+                <h3 class="titulo">Educacion</h3>
+                <div class="educacion-item">
+                    <p class="item-pre-titulo">2021-Ahora</p>
+                    <h4 class="item-titulo">Ingeniería en Computación</h4>
+                    <p class="item-sub-titulo">
+                        Escuela Politecnica del Litoral
+                    </p>
+                </div>
+                <div class="educacion-item">
+                    <p class="item-pre-titulo">2018-2020</p>
+                    <h4 class="item-titulo">B2 Competency in English ECCE</h4>
+                    <p class="item-sub-titulo">
+                        Michigan Lenguage Assessment
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grupo2">
+            <div class="experiencia">
+                <h3 class="titulo">Experience</h3>
+                <div class="item-experiencia">
+                    <p class="item-pre-titulo">2022 - present</p>
+                    <h4 class="item-titulo">Universidad ESPOL</h4>
+                    <p class="item-sub-titulo">Administrador página web</p>
+                    <p class=" texto">
+                        Trabajé administrando una página web de una facultad
+                        coordinando con distintas áreas para certificación internacional.
+                    </p>
+                </div>
+            </div>
+            <div class="proyectos">
+                <h3 class="titulo">Proyectos Personales</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
 
 
-        <p>
-          Fechas: <span>2003 - Presente</span>
-        </p>
-        <p>
-          Descripción:
-        <ul>
-          <li>Desarrollo de aplicaciones web</li>
-          <li>Mantenimiento de sistemas</li>
-          <li>Trabajo en equipo</li>
-        </ul>
-        </p>
-    </section>
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Lenguajes de programación: Python, JavaScript, Java</li>
-        <li>Bases de datos: MySQL, PostgreSQL</li>
-        <li>Frameworks:
-          <ul>
-            <li> React </li>
-            <li> Angular </li>
-            <li> Spring </li>
-            <li> Hibernate </li>
-            <li> Tomcat </li>
-            <li> Express </li>
-            <li> Typescript </li>
-          </ul>
-        </li>
-        <li>Herramientas de desarrollo: Visual Studio Code, Git</li>
-        <li>Otros: Inglés, Portugués</li>
-      </ul>
-    </section>
-    <h1>Contáctame</h1>
-    <form>
-
-      <section id="formulario">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name"> <br>
-        <label for="mail">Ingrese su e-mail: </label>
-        <input type="email" id="mail" name="mail"> <br>
-        <input type="checkbox" id="caja">
-        <label for="caja">Usted conoce a Cristian?</label><br>
-        <label>Ingrese por qué quiere contactarse con Cristian Intriago: </label> <br>
-        <textarea rows="3" cols="40"></textarea><br>
-        <button>Enviar</button>
-      </section>
-
-    </form>
-    <footer>
-      <p>Copyright © 2023 Developed by Cristian</p>
-    </footer>
-  </div>
 </body>
 
 </html>
