@@ -212,7 +212,7 @@ hr {
     grid-column: 1/-1;
     width: 45%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     border: none;
     border-top: 2px solid var(--terniary-color);
@@ -263,6 +263,7 @@ textarea {
 }
 
 .center-vertically {
+    margin-top: 2rem;
     display: flex;
     justify-content: center; /* Horizontal alignment */
     align-items: center; /* Vertical alignment */
