@@ -60,6 +60,11 @@ body {
     }
 }
 
+.titulo-extern{
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+
 /*Perfil*/
 
 .perfil {
@@ -161,6 +166,10 @@ body {
     margin-top: 2rem;
 }
 
+.certificacion{
+    margin-top: 2rem;
+}
+
 .educacion-item {
 	margin-top: 2rem;
 }
@@ -172,6 +181,10 @@ body {
 
 /* proyectos */
 .proyectos{
+    margin-top: 2rem;
+}
+
+.item-proyecto{
     margin-top: 2rem;
 }
 
@@ -189,11 +202,12 @@ body {
 .mapa {
     -webkit-filter: sepia(100%) hue-rotate(180deg);
     filter: sepia(100%) hue-rotate(180deg);
+    margin-top: 2rem;
 }
 
 hr {
 	grid-column: 1/-1;
-	width: 70%;
+	width: 45%;
 	margin: 0 auto;
 	margin-top: 5rem;
 	margin-bottom: 1rem;

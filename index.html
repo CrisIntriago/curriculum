@@ -18,8 +18,9 @@
     <canvas id="Matrix"></canvas>
     <script src="./script.js"></script>
 
+
     <div class="contenedor">
-        <div class="perfil">
+        <section class="perfil">
             <div class="contenedor-perfil">
                 <div class="foto-perfil">
                     <img src="imagenes\foto-perfil-mejorada.png" alt="Cristian Intriago"
@@ -39,10 +40,10 @@
                         took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="grupo1">
-            <div class="tecnologias">
+            <section class="tecnologias">
                 <h3 class="titulo">Tech Stack</h3>
                 <ul class="lista-tecno texto">
                     <li>NodeJs</li>
@@ -54,9 +55,9 @@
                     <li>Python</li>
                     <li>Git</li>
                 </ul>
-            </div>
+            </section>
 
-            <div class="educacion">
+            <section class="educacion">
                 <h3 class="titulo">Educacion</h3>
                 <div class="educacion-item">
                     <p class="item-pre-titulo">2021-Ahora</p>
@@ -72,26 +73,58 @@
                         Michigan Lenguage Assessment
                     </p>
                 </div>
-            </div>
+            </section>
+
+            <section class="certificacion">
+                <h3 class="titulo">Certificaciones</h3>
+                <div class="educacion-item">
+                    <p class="item-pre-titulo">2023</p>
+                    <h4 class="item-titulo">MERN Stack</h4>
+                    <p class="texto">
+                        Hice una certificacion MERN centrada en React
+                        en la plataforma Udemy.
+                    </p>
+                </div>
+            </section>
 
         </div>
 
         <div class="grupo2">
-            <div class="experiencia">
+            <section class="experiencia">
                 <h3 class="titulo">Experience</h3>
                 <div class="item-experiencia">
-                    <p class="item-pre-titulo">2022 - present</p>
+                    <p class="item-pre-titulo">2022 - Presente</p>
                     <h4 class="item-titulo">Universidad ESPOL</h4>
                     <p class="item-sub-titulo">Administrador página web</p>
-                    <p class=" texto">
+                    <p class="texto">
                         Trabajé administrando una página web de una facultad
                         coordinando con distintas áreas para certificación internacional.
                     </p>
                 </div>
-            </div>
-            <div class="proyectos">
-                <h3 class="titulo">Proyectos Personales</h3>
-            </div>
+            </section>
+
+
+            <section class="proyectos">
+                <h3 class="titulo">Proyectos Personales/Universitarios</h3>
+                <div class="item-proyecto">
+                    <p class="item-titulo">Recomendación y autocompletado de palabras</p>
+                    <p class="texto"> Se implemento en java una busqueda y autocompletado de palabras usando
+                        conceptos de estructuras de datos, recursion, complejidad, java generics etc.
+                    </p>
+                </div>
+
+                <div class="item-proyecto">
+                    <p class="item-titulo">Foursquare Base de Datos</p>
+                    <p class="texto"> Se diseño una base de datos aplicando conocimiento en DDL para
+                        simular la colección de toda la data relevante para la aplicación FourSquare y se usó DDL
+                        para insights
+                    </p>
+                </div>
+
+            </section>
+
+
+
         </div>
 
     </div>
@@ -99,6 +132,56 @@
     <hr>
 
 
+
+    <div class="contenedor">
+
+
+        <div class="grupo1">
+
+            <div class="titulo">
+                <p class="titulo-extern">Contáctame</p>
+            </div>
+            <section id="informacion">
+                <div class="item-proyecto">
+                    <div class="item-titulo">
+                        <p>Correo: caintria@espol.edu.ec</p>
+                    </div>
+                    <div class="item-titulo">
+                        <p>País de Origen: Ecuador,Guayaquil</p>
+                    </div>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2888473.30583834!2d-81.18935016899925!3d-1.0266316467070546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1698237140674!5m2!1sen!2sec"
+                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="grupo2">
+            <form>
+                <label for="name">Su nombre:</label>
+                <input type="text" id="name">
+                <label for="apellido">Su apellido:</label>
+                <input type="text" id="apellido">
+                <label for="tema">Tema:</label>
+                <input type="text" id="tema">
+                <label for="mensaje">Mensaje:</label>
+                <input for="text-area" id="mensaje">
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <nav>
+
+        </nav>
+    </footer>
 </body>
 
 </html>
