@@ -20,7 +20,7 @@
 
 
     <div class="contenedor">
-        <section class="perfil">
+        <section class="perfil" id="perfil">
             <div class="contenedor-perfil">
                 <div class="foto-perfil">
                     <img src="imagenes\foto-perfil-mejorada.png" alt="Cristian Intriago"
@@ -90,7 +90,7 @@
         </div>
 
         <div class="grupo2">
-            <section class="experiencia">
+            <section class="experiencia" id="experiencia">
                 <h3 class="titulo">Experience</h3>
                 <div class="item-experiencia">
                     <p class="item-pre-titulo">2022 - Presente</p>
@@ -104,7 +104,7 @@
             </section>
 
 
-            <section class="proyectos">
+            <section class="proyectos" id="proyectos">
                 <h3 class="titulo">Proyectos Personales/Universitarios</h3>
                 <div class="item-proyecto">
                     <p class="item-titulo">Recomendación y autocompletado de palabras</p>
@@ -143,11 +143,11 @@
             </div>
             <section id="informacion">
                 <div class="item-proyecto">
-                    <div class="item-titulo">
-                        <p>Correo: caintria@espol.edu.ec</p>
+                    <div>
+                        <p class="item-titulo">Correo:</p> <span class="texto"> caintria@espol.edu.ec</span>
                     </div>
-                    <div class="item-titulo">
-                        <p>País de Origen: Ecuador,Guayaquil</p>
+                    <div>
+                        <p class="item-titulo">País de origen:</p> <span class="texto"> Ecuador</span>
                     </div>
                     <div class="mapa">
                         <iframe
@@ -161,25 +161,46 @@
         </div>
 
         <div class="grupo2">
-            <form>
-                <label for="name">Su nombre:</label>
-                <input type="text" id="name">
-                <label for="apellido">Su apellido:</label>
-                <input type="text" id="apellido">
-                <label for="tema">Tema:</label>
-                <input type="text" id="tema">
-                <label for="mensaje">Mensaje:</label>
-                <input for="text-area" id="mensaje">
-            </form>
+            <form class="contacto" id="contacto">
+                <div class="item-contacto">
+                    <label for="name">Su nombre:</label>
+                    <input type="text" id="name">
+                </div>
 
+                <div class="item-contacto">
+                    <label for="apellido">Su apellido:</label>
+                    <input type="text" id="apellido">
+                </div>
+
+
+                <div class="item-contacto">
+                    <div class="mensaje">
+                        <label for="mensaje" id="mensaje">Mensaje:</label>
+                        <textarea></textarea>
+                        </diuv>
+
+                    </div>
+                </div>
+
+
+
+            </form>
+            <div class="center-vertically">
+                <button class="boton-enviar">Enviar</button>
+            </div>
+            
         </div>
 
     </div>
 
+    <hr>
 
-    <footer>
+    <footer class="center-vertically item-titulo">
         <nav>
-
+                <li class="horizontal"><a href="#perfil">Inicio</a></li>
+                <li class="horizontal"><a href="#experiencia">Experiencia</a></li>
+                <li class="horizontal"><a href="#proyectos">Proyectos</a></li>
+                <li class="horizontal"><a href="#contacto">Contacto</a></li>
         </nav>
     </footer>
 </body>
