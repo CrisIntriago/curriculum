@@ -64,6 +64,30 @@ body {
         display:none;
         margin-left: 0;
         margin-right: 0;
+        
+    }
+    
+    .cover{
+        display: none;
+    }
+
+    .portafolio-item{
+        display: none;
+    }
+
+    #portafolio{
+        display: none;
+    }
+    #portafolio-link{
+        display: none;
+
+    }
+    .bloque-horizontal{
+        display: none;
+    }
+
+    .horizontal{
+        display: none;
     }
 }
 
