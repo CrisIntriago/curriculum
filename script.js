@@ -1,3 +1,14 @@
+
+
+let colorLetras= '#335f79';
+
+const cambiarColor= () => {
+    colorLetras= '#1B1B1B';
+}
+
+setTimeout(cambiarColor, 4000);
+
+
 const canvas = document.getElementById('Matrix');
 const context = canvas.getContext('2d');
 
@@ -23,7 +34,7 @@ const draw = () => {
     context.fillStyle = 'rgba(0, 0, 0, 0.05)';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = '#335f79';
+    context.fillStyle = colorLetras;
     context.font = fontSize + 'px monospace';
 
     for(let i = 0; i < rainDrops.length; i++)

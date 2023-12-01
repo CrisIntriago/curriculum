@@ -238,23 +238,26 @@ textarea {
 
 }
 
-.contacto{
+.contacto {
     margin-top: 20px;
 }
-.item-contacto{
 
-}
-
-.mensaje{
+.mensaje {
     margin-top: 20px !important;
 }
-.boton-enviar{
+
+.boton-enviar {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding to control button size */
-    background-color:var(--primary-color); /* Button background color */
-    color: var(--secundary-color); /* Button text color */
-    border: none; /* Remove default button border */
-    border-radius: 4px; /* Rounded corners for the button */
+    padding: 10px 20px;
+    /* Adjust padding to control button size */
+    background-color: var(--primary-color);
+    /* Button background color */
+    color: var(--secundary-color);
+    /* Button text color */
+    border: none;
+    /* Remove default button border */
+    border-radius: 4px;
+    /* Rounded corners for the button */
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -262,29 +265,117 @@ textarea {
     margin-top: 20px;
 }
 
-.center-vertically {
-    margin-top: 2rem;
+.bloque-horizontal {
+    grid-column: 1/-1;
     display: flex;
-    justify-content: center; /* Horizontal alignment */
-    align-items: center; /* Vertical alignment */
-    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--secundary-color);
+    font-weight: 500;
+    
 }
 
 .boton-enviar:hover {
-    background-color:var(--hover-color); /* Color change on hover */
+    background-color: var(--hover-color);
+    /* Color change on hover */
 }
 
 
-.horizontal{
-    display: inline; /* Display list items inline */
-    margin-right: 20px; /* Add space between list items */
-   
+.horizontal {
+    display: inline;
+    margin-right: 20px;
+    /* Display list items inline */
+    /* Add space between list items */
+
+}
+
+a {
+    color: var(--terniary-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+
+/*  Redes Sociales */
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;   
+}
+
+.redes-seccion{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-item {
+    color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
 }
 
 a{
-    color:var(--terniary-color);
+    color:var(--primary-color);
 }
 
-a:hover{
+.fa-linkedin:hover {
     color: var(--hover-color);
+    cursor: pointer; 
+}
+
+.fa-github:hover {
+    color: var(--hover-color); 
+    cursor: pointer; 
+}
+.link{
+    text-align: center;
+    font-size: 2rem;
+    color:var(--terniary-color)
+}
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+/*  Sección Portafolio */
+
+.portafolio-seccion{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.portafolio-item{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 2px;
+    position: relative;
+}
+
+.portafolio-imagen{
+    width: 100%;
+    height: 100%;
 }

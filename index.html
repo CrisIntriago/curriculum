@@ -12,6 +12,7 @@
         content="Currículum Vitae, Cristian Ariel Intriago Moncayo, Habilidades, Experiencia, Industria, Proyectos, Software, Ingeniero, Desarrollador de software">
     <link rel="stylesheet" href="stylesheets/style.css">
     <title>Resume Cristian Intriago</title>
+    <script src="https://kit.fontawesome.com/9e0c19614a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
 
 
     <div class="contenedor">
+
         <section class="perfil" id="perfil">
             <div class="contenedor-perfil">
                 <div class="foto-perfil">
@@ -27,19 +29,50 @@
                         style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); border-radius: 10px;">
                 </div>
                 <div>
-                    <header>
-                        <h1 class="nombre-perfil">
-                            <span class="nombre">Cristian</span>
-                            <span class="apellido-materno">Intriago Moncayo</span>
-                        </h1>
-                    </header>
+                    <div class="cabecera">
+
+                        <header>
+                            <h1 class="nombre-perfil">
+                                <span class="nombre">Cristian</span>
+                                <span class="apellido-materno">Intriago Moncayo</span>
+                            </h1>
+                        </header>
+                        <div class="redes-seccion">
+                            <div class="redes">
+
+                                <div class="redes-item ">
+                                    <a href="https://www.linkedin.com/in/CrisIntriago" target="_blank">
+                                        <i class="fa-brands fa-linkedin fa-6x"></i>
+                                    </a>
+
+                                </div>
+
+                                <div class="redes-item ">
+                                    <a href=https://github.com/CrisIntriago target="_blank">
+                                        <i class="fa-brands fa-github fa-6x"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <span class="link">/CrisIntriago</span>
+                        </div>
+
+                    </div>
 
                     <span class="carrera">Desarrollador Junior</span>
-                    <p class="texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                        took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="texto">Apasionado del desarrollo web, autodidacta y obsesionado por dar el mejor
+                        servicio.
+                        Usando la computadora desde pequeño, amante de resolver problemas complejos siempre estuve
+                        impresionado con lo que una computadora puede resolver.
+                    </p>
                 </div>
             </div>
+        </section>
+
+        <section class="bloque-horizontal">
+            <nav>
+                <li class="horizontal"><a href="#Portafolio">Portafolio</a></li>
+            </nav>
         </section>
 
         <div class="grupo1">
@@ -93,12 +126,13 @@
             <section class="experiencia" id="experiencia">
                 <h3 class="titulo">Experience</h3>
                 <div class="item-experiencia">
-                    <p class="item-pre-titulo">2022 - Presente</p>
+                    <p class="item-pre-titulo">2023 - Presente</p>
                     <h4 class="item-titulo">Universidad ESPOL</h4>
                     <p class="item-sub-titulo">Administrador página web</p>
                     <p class="texto">
-                        Trabajé administrando una página web de una facultad
-                        coordinando con distintas áreas para certificación internacional.
+                        Como Administrador de la página web en la Facultad de Arte, Diseño y Comunicación (FADCOM),
+                        coordino con los distintos departamentos de FADCOM actualizar información y crear nuevos módulos
+                        pertinentes para cumplir con los rigurosos requisitos de la certificación internacional NASAD
                     </p>
                 </div>
             </section>
@@ -106,6 +140,14 @@
 
             <section class="proyectos" id="proyectos">
                 <h3 class="titulo">Proyectos Personales/Universitarios</h3>
+
+                <div class="item-proyecto">
+                    <p class="item-titulo">Tienda Online en Angular</p>
+                    <p class="texto"> Se desplegó una aplicación en Angular tomando en cuenta principios de diseño de software como 
+                        modularización.
+                    </p>
+                </div>
+
                 <div class="item-proyecto">
                     <p class="item-titulo">Recomendación y autocompletado de palabras</p>
                     <p class="texto"> Se implemento en java una busqueda y autocompletado de palabras usando
@@ -127,80 +169,23 @@
 
         </div>
 
-    </div>
 
-    <hr>
+        <section class="portafolio-seccion">
+            <div class="portafolio-item">
 
-
-
-    <div class="contenedor">
-
-
-        <div class="grupo1">
-
-            <div class="titulo">
-                <p class="titulo-extern">Contáctame</p>
             </div>
-            <section id="informacion">
-                <div class="item-proyecto">
-                    <div>
-                        <p class="item-titulo">Correo:</p> <span class="texto"> caintria@espol.edu.ec</span>
-                    </div>
-                    <div>
-                        <p class="item-titulo">País de origen:</p> <span class="texto"> Ecuador</span>
-                    </div>
-                    <div class="mapa">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2888473.30583834!2d-81.18935016899925!3d-1.0266316467070546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1698237140674!5m2!1sen!2sec"
-                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-        </div>
 
-        <div class="grupo2">
-            <form class="contacto" id="contacto">
-                <div class="item-contacto">
-                    <label for="name">Su nombre:</label>
-                    <input type="text" id="name">
-                </div>
-
-                <div class="item-contacto">
-                    <label for="apellido">Su apellido:</label>
-                    <input type="text" id="apellido">
-                </div>
-
-
-                <div class="item-contacto">
-                    <div class="mensaje">
-                        <label for="mensaje" id="mensaje">Mensaje:</label>
-                        <textarea></textarea>
-                        </diuv>
-
-                    </div>
-                </div>
-
-
-
-            </form>
-            <div class="center-vertically">
-                <button class="boton-enviar">Enviar</button>
-            </div>
-            
-        </div>
+        </section>
 
     </div>
 
-    <hr>
 
-    <footer class="center-vertically item-titulo">
+    <footer class="bloque-horizontal">
         <nav>
-                <li class="horizontal"><a href="#perfil">Inicio</a></li>
-                <li class="horizontal"><a href="#experiencia">Experiencia</a></li>
-                <li class="horizontal"><a href="#proyectos">Proyectos</a></li>
-                <li class="horizontal"><a href="#contacto">Contacto</a></li>
+            <li class="horizontal"><a href="#perfil">Inicio</a></li>
+            <li class="horizontal"><a href="#experiencia">Experiencia</a></li>
+            <li class="horizontal"><a href="#proyectos">Proyectos</a></li>
+            <li class="horizontal"><a href="#contacto">Contacto</a></li>
         </nav>
     </footer>
 </body>
